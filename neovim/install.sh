@@ -48,7 +48,6 @@ progress() {
     echo -ne "\r$3"
 }
 
-# Install neovim.
 installNeovim() {
     rm -fr "${INSTALL_DIR}" "${BIN_DIR}/vim"
     mkdir -p "${INSTALL_DIR}"
@@ -59,27 +58,30 @@ installNeovim() {
 }
 
 installVimPlug() {
-    curl -s -fLo "${HOME}/.local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    curl -sfLo "${HOME}/.local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+}
+
+setConfigurationFiles() {
+    curl -sfLo "${CONFIG_DIR}/init.vim" --create-dirs https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/init.vim
+    curl -sfLo "${CONFIG_DIR}/coc-settings.json" --create-dirs https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/coc-settings.json
 }
 
 #
 # Main script
 #
 
-progress installNeovim "Installing Neovim..." "${TEXT_SUCCESS} ✔${NC} Neovim was successfully installed!\n\n"
+progress installNeovim " Installing Neovim..." "${TEXT_SUCCESS} ✔${NC} Neovim was successfully installed!\n\n"
 
 sudo apt update -qq
 sudo apt install python3 python3-pip python3-venv git curl exuberant-ctags fonts-hack-ttf -y -qq
 echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim dependencies was successfully installed!"
 
-installVimPlug
-echo -e "${TEXT_SUCCESS} ✔${NC} Vim Plug was successfully installed!"
+progress installVimPlug " Installing Vim Plug" "${TEXT_SUCCESS} ✔${NC} Vim Plug was successfully installed!"
 
-sed '/call plug#end/q' init.vim > ~/.config/nvim/init.vim
+progresssetdConfigurationFiles " Setting configuration files" "${TEXT_SUCCESS} ✔${NC} Configuration files have been set up correctly!"
+
 vim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
-rm ~/.config/nvim/init.vim
-cp init.vim ~/.config/nvim/
 
-echo -e "${TEXT_SUCCESS} ✔${NC} Neovim plugins was successfully installed!"
+echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim plugins was successfully installed!"
 
 echo -e "\n${TEXT_SUCCESS} ✔${NC} Done, welcome to ${TEXT_PRIMARY}Neovim${NC}!\n"
