@@ -78,7 +78,7 @@ echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim dependencies was successfully install
 
 progress installVimPlug " Installing Vim Plug" "${TEXT_SUCCESS} ✔${NC} Vim Plug was successfully installed!"
 
-progresssetdConfigurationFiles " Setting configuration files" "${TEXT_SUCCESS} ✔${NC} Configuration files have been set up correctly!"
+progress setConfigurationFiles " Setting configuration files" "${TEXT_SUCCESS} ✔${NC} Configuration files have been set up correctly!"
 
 vim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
 
