@@ -59,6 +59,7 @@ set title
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
+  \ 'coc-sh',
   \ 'coc-tsserver',
   \ 'coc-spell-checker',
   \ 'coc-eslint',
@@ -301,5 +302,5 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+inoremap <silent><expr> <M-CR> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
