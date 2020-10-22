@@ -1,0 +1,7 @@
+[user]
+    email = me@cedoor.dev
+    name = cedoor
+[core]
+    editor = vim
+[commit]
+  template = ~/.gitcommit
