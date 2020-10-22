@@ -4,7 +4,7 @@ Git configuration files and some rules to improve development.
 
 ## Commits rules
 
-Each commit message consists of a header and a body. The header has a special format that includes a type, a scope and a subject:
+Each commit message consists of a header and a body. The header has a special format that includes a type and a subject:
 
     [<type>] <subject>
     <BLANK LINE>
