@@ -3,6 +3,8 @@
 [![Linkedin](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://linkedin.com/in/cedoor)
 [![Medium](https://www.vectorlogo.zone/logos/medium/medium-ar21.svg)](https://medium.com/@cedoor_)
 
+---
+
 I'm very **curious** and I love **challenges** 🎯, I have been practicing **meditation** 🧘‍♂️ for several years and I like **mountain biking** 🚵‍♂️. I mainly **read** essays about psychology, politics, sociology, but also novels of all kinds. I am very fussy about work **organization**, **productivity** and **time management**. I'm a **minimalist** and a fan of **KISS** design. For me, the code must first of all be **clear and simple**. I have been working with **Javascript** for 3 years, but lately I mainly use **TypeScript**. I have also used **Python** for several projects. For the past two years I have been working on **blockchain** and **p2p technologies**, mainly on **Ethereum**. I consider **privacy** and the **fair distribution** of decision-making power very important.
 
 - 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and a JS library to be used as a module of a decentralized e-voting system.
@@ -10,6 +12,8 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 - 🌱 I'm currently learning **network flow optimization algorithms** (master's course) and **ZK-Snark technologies**.
 
 - 📚 I'm currently reading the [YDKJS](https://github.com/getify/You-Dont-Know-JS) book series and "[Indipendenti. Guida allo smart working](https://www.ibs.it/indipendenti-guida-allo-smart-working-libro-marco-bentivogli/e/9788849863949)" of Marco Bentivogli.
+
+---
 
 **Blockchains**
 
@@ -39,7 +43,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 ![Archlinux](https://www.vectorlogo.zone/logos/archlinux/archlinux-ar21.svg)
 ![Debian](https://www.vectorlogo.zone/logos/debian/debian-ar21.svg)
 
-___
+---
 
 **📊 Github statistics**
 
