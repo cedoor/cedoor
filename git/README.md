@@ -15,9 +15,10 @@ Each commit message consists of a header and a body. The header has a special fo
 The type must be one of the following:
 
 - init: Initial commit, usually a commit to set up a basic structure to start from
+- asset: A new asset
 - feat: A new feature
 - test: Adding missing or correcting existing tests
-- drop: A feature or/and test removal
+- drop: A feature/test or asset removal
 - fix: A bug fix
 - docs: Documentation changes
 - reformat: Changes that do not affect the meaning of the code (e.g. indent line, trim space)
