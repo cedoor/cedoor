@@ -1,4 +1,4 @@
-# Git
+![Git](https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg)
 
 Git configuration files and some rules to improve development.
 
