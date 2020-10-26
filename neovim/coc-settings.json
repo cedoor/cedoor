@@ -9,5 +9,12 @@
     "typescript.tsx",
     "graphql"
   ],
-  "coc.preferences.extensionUpdateCheck": "daily"
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": true,
+  "prettier.semi": false,
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "none"
 }
