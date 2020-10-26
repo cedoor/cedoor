@@ -5,9 +5,8 @@
 #
 
 # Main nvim directories.
-INSTALL_DIR="${HOME}/.opt/nvim"
-BIN_DIR="${HOME}/.local/bin"
 CONFIG_DIR="${HOME}/.config/nvim"
+SNIPPETS_CONFIG_DIR="${HOME}/.config/coc/ultisnips"
 
 # Colors.
 TEXT_PRIMARY='\033[1;32m'
@@ -48,15 +47,6 @@ progress() {
     echo -ne "\r$3"
 }
 
-installNeovim() {
-    rm -fr "${INSTALL_DIR}" "${BIN_DIR}/vim"
-    mkdir -p "${INSTALL_DIR}"
-    wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -P "${INSTALL_DIR}" -q
-    chmod u+x "${INSTALL_DIR}/nvim.appimage"
-    ln -s "${INSTALL_DIR}/nvim.appimage" "${BIN_DIR}/vim"
-    mkdir -p "${CONFIG_DIR}"
-}
-
 installVimPlug() {
     curl -sfLo "${HOME}/.local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 }
@@ -66,22 +56,25 @@ setConfigurationFiles() {
     curl -sfLo "${CONFIG_DIR}/coc-settings.json" --create-dirs https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/coc-settings.json
 }
 
+setSnippets() {
+    curl -sfLo "${SNIPPETS_CONFIG_DIR}/gitcommit.snippets" --create-dirs https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/ultisnips/gitcommit.snippets
+}
+
 #
 # Main script
 #
 
-progress installNeovim " Installing Neovim..." "${TEXT_SUCCESS} ✔${NC} Neovim was successfully installed!\n\n"
-
-sudo apt update -qq
-sudo apt install python3 python3-pip python3-venv git curl exuberant-ctags fonts-hack-ttf -y -qq
-echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim dependencies was successfully installed!"
+sudo pacman -Syuq neovim npm nodejs python3 python-pip python-neovim xclip xsel git curl ttf-hack ttf-nerd-fonts-symbols
+echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim and dependencies was successfully installed!"
 
 progress installVimPlug " Installing Vim Plug" "${TEXT_SUCCESS} ✔${NC} Vim Plug was successfully installed!"
 
 progress setConfigurationFiles " Setting configuration files" "${TEXT_SUCCESS} ✔${NC} Configuration files have been set up correctly!"
 
-vim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
+nvim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
 
 echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim plugins was successfully installed!"
+
+progress setSnippets " Setting snippets" "${TEXT_SUCCESS} ✔${NC} Snippets have been set up correctly!"
 
 echo -e "\n${TEXT_SUCCESS} ✔${NC} Done, welcome to ${TEXT_PRIMARY}Neovim${NC}!\n"

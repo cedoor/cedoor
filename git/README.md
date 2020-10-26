@@ -2,6 +2,14 @@
 
 Git configuration files and some rules to improve development.
 
+## :hammer: Install
+
+Run `install.sh` script with curl to set configuration files in your file system:
+
+```bash
+curl -o- https://raw.githubusercontent.com/cedoor/cedoor/main/git/install.sh | bash
+```
+
 ## Commits rules
 
 Each commit message consists of a header and a body. The header has a special format that includes a type and a subject:
