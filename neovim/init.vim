@@ -32,6 +32,7 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'vim-scripts/loremipsum'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
+Plug 'tomlion/vim-solidity'
 
 " Entertainment
 Plug 'adelarsq/vim-hackernews'
@@ -60,6 +61,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-sh',
+  \ 'coc-marketplace',
   \ 'coc-tsserver',
   \ 'coc-spell-checker',
   \ 'coc-eslint',
