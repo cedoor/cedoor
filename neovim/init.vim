@@ -32,7 +32,7 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'vim-scripts/loremipsum'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
-Plug 'tomlion/vim-solidity'
+Plug 'sheerun/vim-polyglot'
 
 " Entertainment
 Plug 'adelarsq/vim-hackernews'
@@ -54,6 +54,7 @@ set wrap breakindent
 set encoding=utf-8
 set number
 set title
+set spell spelllang=en_us,it
 
 """ Coc Configurations
 
@@ -63,7 +64,6 @@ let g:coc_global_extensions = [
   \ 'coc-sh',
   \ 'coc-marketplace',
   \ 'coc-tsserver',
-  \ 'coc-spell-checker',
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
