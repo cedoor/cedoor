@@ -275,6 +275,8 @@ nmap <leader>d :call <SID>showDocumentation()<CR>
 " Mappings for CoCList
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+" Shaw extensions marketplace.
+nnoremap <silent><nowait> <space>m  :<C-u>CocList marketplace<cr>
 " Manage extensions.
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
