@@ -11,7 +11,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 - 🌱 I'm currently learning **network flow optimization algorithms** (master's course) and **ZK-Snark technologies**.
 
-- 📚 I'm currently reading the [YDKJS](https://github.com/getify/You-Dont-Know-JS) book series and "[Indipendenti. Guida allo smart working](https://www.ibs.it/indipendenti-guida-allo-smart-working-libro-marco-bentivogli/e/9788849863949)" of Marco Bentivogli.
+- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Lord of the Rings - The Fellowship of the Ring*.
 
 ---
 
