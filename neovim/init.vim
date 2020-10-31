@@ -62,6 +62,8 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-sh',
+  \ 'coc-css',
+  \ 'coc-html',
   \ 'coc-marketplace',
   \ 'coc-tsserver',
   \ 'coc-eslint',
