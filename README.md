@@ -19,7 +19,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 ![Ethereum](https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg)
 
-> Solidity | Truffle | Buidler | OpenZeppelin | Web3.js | Ethers.js | IPFS
+> Solidity | Truffle | Hardhat | OpenZeppelin | Web3.js | Ethers.js | IPFS
 
 **Web technologies**
 
