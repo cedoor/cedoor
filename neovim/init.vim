@@ -227,7 +227,7 @@ let mapleader=","
 nmap <silent> <leader><leader> :noh<CR>
 
 " Toggle the Nerd tree.
-nmap <leader>z :NERDTreeToggle<CR>
+nmap <leader>t :NERDTreeToggle<CR>
 
 " Toggle terminal on/off (neovim).
 nmap <A-t> :call <SID>termToggle(12)<CR>
