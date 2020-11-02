@@ -64,7 +64,7 @@ setSnippets() {
 # Main script
 #
 
-sudo pacman -Syuq neovim npm nodejs python3 python-pip python-neovim xclip xsel git curl ttf-hack ttf-nerd-fonts-symbols
+sudo pacman -Syuq --noconfirm neovim npm nodejs python3 python-pip python-neovim xclip xsel git curl ttf-hack ttf-nerd-fonts-symbols
 echo -e "\n${TEXT_SUCCESS} ✔${NC} Neovim and dependencies was successfully installed!"
 
 progress installVimPlug " Installing Vim Plug" "${TEXT_SUCCESS} ✔${NC} Vim Plug was successfully installed!"
