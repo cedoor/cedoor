@@ -7,7 +7,7 @@ Git configuration files and some rules to improve development.
 Run `install.sh` script with curl to set configuration files in your file system:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/cedoor/cedoor/main/git/install.sh | bash
+source <(curl -s https://raw.githubusercontent.com/cedoor/cedoor/main/git/install.sh)
 ```
 
 ## Commits rules
