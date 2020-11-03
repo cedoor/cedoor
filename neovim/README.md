@@ -7,7 +7,7 @@ Neovim configuration files and snippets.
 Run `install.sh` script with curl to install Neovim with dependencies and plugins:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/install.sh | bash
+source <(curl -s https://raw.githubusercontent.com/cedoor/cedoor/main/neovim/install.sh)
 ```
 
 and open Neovim editor to istall `coc` plugins:
