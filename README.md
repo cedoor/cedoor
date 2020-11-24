@@ -11,7 +11,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 - 🌱 I'm currently learning **network flow optimization algorithms** (master's course) and **ZK-Snark technologies**.
 
-- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Lord of the Rings - The Fellowship of the Ring*.
+- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Lord of the Rings - The Two Towers*.
 
 ---
 
