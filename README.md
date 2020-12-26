@@ -9,9 +9,9 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 - 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and a JS library to be used as a module of a decentralized e-voting system.
 
-- 🌱 I'm currently learning **network flow optimization algorithms** (master's course) and **ZK-Snark technologies**.
+- 🌱 I'm currently learning **ethers.js**, **3Box.js**, and **ZK-Snark technologies**.
 
-- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Lord of the Rings - The Fellowship of the Ring*.
+- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series, *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology* and *The Lord of the Rings: The Return of the King*.
 
 ---
 
@@ -19,7 +19,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 ![Ethereum](https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg)
 
-> Solidity | Truffle | Hardhat | OpenZeppelin | Web3.js | Ethers.js | IPFS
+> Solidity | Truffle | Hardhat | OpenZeppelin | Web3.js | Ethers.js | IPFS | 3Box
 
 **Web technologies**
 
@@ -31,6 +31,7 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 **Testing**
 
+![Jest](https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg)
 ![Mocha](https://www.vectorlogo.zone/logos/mochajs/mochajs-ar21.svg)
 ![Chai](https://www.vectorlogo.zone/logos/chaijs/chaijs-ar21.svg)
 

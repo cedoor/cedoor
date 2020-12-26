@@ -12,28 +12,37 @@ source <(curl -s https://raw.githubusercontent.com/cedoor/cedoor/main/git/instal
 
 ## Commits rules
 
-Each commit message consists of a header and a body. The header has a special format that includes a type and a subject:
+For commits it is recommended to use [Conventional Commits](https://www.conventionalcommits.org).
 
-    [<type>] <subject>
+Each commit message consists of a **header**, a **body** and a **footer**. The **header** has a special format that includes a **type**, a **scope** and a **subject**:
+
+    <type>(<scope>): <subject>
     <BLANK LINE>
     <body>
+    <BLANK LINE>
+    <footer>
+
+The **header** is mandatory and the **scope** of the header is optional.
 
 ### Type
 
 The type must be one of the following:
 
-- init: Initial commit, usually a commit to set up a basic structure to start from
-- asset: A new asset
 - feat: A new feature
-- test: Adding missing or correcting existing tests
-- drop: A feature/test or asset removal
 - fix: A bug fix
-- docs: Documentation changes
-- reformat: Changes that do not affect the meaning of the code (e.g. indent line, trim space)
-- optimize: Changes that improve the performance of the code
+- docs: Documentation only changes
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - refactor: A code change that neither fixes a bug nor adds a feature (improvements of the code structure)
-- conf: Changes to configuration files (e.g. build process or auxiliary tools, libraries such as documentation generation)
-- deps: A dependency removal or changes to dependency versions
+- perf: A code change that improves the performance
+- test: Adding missing or correcting existing tests
+- build: Changes that affect the build system or external dependencies (example scopes: gulp, npm)
+- ci: Changes to CI configuration files and scripts (example scopes: travis, circle)
+- chore: Other changes that don't modify src or test files
+- revert: Reverts a previous commit
+
+### Scope
+
+The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages).
 
 ### Subject
 
