@@ -8,7 +8,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'junegunn/vim-journal'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Functionalities
@@ -42,6 +41,7 @@ call plug#end()
 """ Theme
 colorscheme gruvbox
 let g:airline_theme='bubblegum'
+let g:quickui_color_scheme = 'gruvbox'
 
 """ General configurations
 filetype plugin indent on
@@ -112,6 +112,17 @@ let g:NERDTreeDirArrowCollapsible = '↡'
 let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeIgnore = ['^node_modules$']
 
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+""" NERDCommenter configurations
+let g:NERDCreateDefaultMappings = 0
+
 """ Airline configurations
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
@@ -152,9 +163,8 @@ autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType htmldjango inoremap {# {#  #}<left><left><left>
 
-" Markdown and Journal
+" Markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType journal setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 """ Custom Functions
 
@@ -178,24 +188,19 @@ endfunction
 
 let g:term_buf = 0
 let g:term_win = 0
-function! s:termToggle(height)
-    if win_gotoid(g:term_win)
-        quit!
-    else
-        botright new
-        exec "resize " . a:height
-        try
-            exec "buffer " . g:term_buf
-        catch
-            call termopen($SHELL, {"detach": 0})
-            let g:term_buf = bufnr("")
-            set nonumber
-            set norelativenumber
-            set signcolumn=no
-        endtry
-        startinsert!
-        let g:term_win = win_getid()
-    endif
+function! s:openTerminal(height)
+    botright new
+    exec "resize " . a:height
+    try
+        exec "buffer " . g:term_buf
+    catch
+        call termopen($SHELL, {"detach": 0})
+        let g:term_buf = bufnr("")
+        set nonumber
+        set norelativenumber
+        set signcolumn=no
+    endtry
+    startinsert!
 endfunction
 
 
@@ -227,23 +232,32 @@ let mapleader=","
 " Remove the highlighting.
 nmap <silent> <leader><leader> :noh<CR>
 
+" Buffer mappings.
+nmap <C-d> :bp<bar>sp<bar>bn<bar>bd<CR>
+nmap <Tab> :bnext<CR>
+nmap <S-Tab> :bprevious<CR>
+
 " Toggle the Nerd tree.
-nmap <leader>t :NERDTreeToggle<CR>
-
-" Toggle terminal on/off (neovim).
-nmap <A-t> :call <SID>termToggle(12)<CR>
-imap <A-t> <Esc>:call <SID>termToggle(12)<CR>
-tmap <A-t> <C-\><C-n>:call <SID>termToggle(12)<CR>
-
-" Terminal go back to normal mode.
-tmap <Esc> <C-\><C-n>
-tmap :q! <C-\><C-n>:q!<CR>
+nmap <silent><C-t> :NERDTreeFocus<CR>
 
 " Toggle the tag bar.
-nmap <leader>b :TagbarToggle<CR>
+nmap <silent><C-b> :TagbarToggle<CR>
 
-" Set journal filetype.
-nmap <leader>j :set filetype=journal<CR>
+" Search a file in the file system.
+nmap <silent><C-f> :Files<CR>
+
+" Open a nvim terminal.
+nmap <A-t> :call <SID>openTerminal(12)<CR>
+
+" Close the current nvim terminal.
+tmap <silent><Esc> <C-\><C-n>:q!<CR>
+
+" Save the current buffer.
+nmap <C-s> :w<CR>
+
+" Comment one or more lines of code with visual mode.
+vmap <C-\> <plug>NERDCommenterToggle
+nmap <C-\> <plug>NERDCommenterToggle
 
 " Window mappings.
 nmap <leader>h <C-w>s<C-w>w<CR>
@@ -259,29 +273,18 @@ nmap <M-Down> <C-w>j<CR>
 nmap <M-Left> <C-w>h<CR>
 nmap <M-Right> <C-w>l<CR>
 
-" Buffer mappings.
-nmap <C-d> :bdelete<CR>
-nmap <Tab> :bnext<CR>
-nmap <S-Tab> :bprevious<CR>
-
-" Search a file in the file system.
-nmap <C-f> :Files<CR>
-
-" Comment one or more lines of code with visual mode.
-vmap \ <plug>NERDCommenterToggle
-nmap \ <plug>NERDCommenterToggle
-
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
+nmap <silent><leader>s <Plug>(coc-range-select)
+xmap <silent><leader>s <Plug>(coc-range-select)
 
 " Remap for rename current word.
 nmap <leader>r <Plug>(coc-rename)
-" Add `:OR` command for organize imports of the current buffer.
-nmap <silent> <leader>o :call CocAction('runCommand', 'editor.action.organizeImport')<CR>
 
-" Formatting code.
+" Organize imports of the current buffer.
+nmap <silent><leader>o :call CocAction('runCommand', 'editor.action.organizeImport')<CR>
+
+" Format code.
 map <leader>f :call CocAction('format')<CR>
 
 " Applying codeAction to the selected region.
