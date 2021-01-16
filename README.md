@@ -9,9 +9,9 @@ I'm very **curious** and I love **challenges** 🎯, I have been practicing **me
 
 - 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and a JS library to be used as a module of a decentralized e-voting system.
 
-- 🌱 I'm currently learning **ethers.js**, **3Box.js**, and **ZK-Snark technologies**.
+- 🌱 I'm currently learning **ethers.js**, and **ZK-Snark technologies**.
 
-- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series, *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology* and *The Lord of the Rings: The Return of the King*.
+- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
 
 ---
 
