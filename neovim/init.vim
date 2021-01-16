@@ -32,6 +32,7 @@ Plug 'vim-scripts/loremipsum'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'eliba2/vim-node-inspect'
 
 " Entertainment
 Plug 'adelarsq/vim-hackernews'
@@ -258,6 +259,15 @@ nmap <C-s> :w<CR>
 " Comment one or more lines of code with visual mode.
 vmap <C-\> <plug>NERDCommenterToggle
 nmap <C-\> <plug>NERDCommenterToggle
+
+" Node inspect mappings.
+nmap <silent><leader>br :NodeInspectRun<CR>
+nmap <silent><leader>bs :NodeInspectStop<CR>
+nmap <silent><leader>bb :NodeInspectToggleBreakpoint<CR>
+nmap <silent><leader>ba :NodeInspectRemoveAllBreakpoints<CR>
+nnoremap <silent><leader>bj :NodeInspectStepOver<CR>
+nnoremap <silent><leader>bl :NodeInspectStepInto<CR>
+nnoremap <silent><leader>bh :NodeInspectStepOut<CR>
 
 " Window mappings.
 nmap <leader>h <C-w>s<C-w>w<CR>
