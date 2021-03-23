@@ -5,11 +5,9 @@
 
 ---
 
-I'm very **curious** and I love **challenges** 🎯, I have been practicing **meditation** 🧘‍♂️ for several years and I like **mountain biking** 🚵‍♂️. I mainly **read** essays about psychology, politics, sociology, but also novels of all kinds 📖. I am very fussy about work **organization**, **productivity** and **time management** ⏱️. I'm a **minimalist** (fan of **KISS** design) and for me the code first of all must be **clear and efficient** 🚀. I have been working with **Javascript** for 3 years (lately **TypeScript**) and **Solidity** for 2 years, but I have also used **Python** for several projects. For the past two years I have been working on **blockchain** and **p2p technologies**, mainly on **Ethereum**. I consider **privacy** 🔒 and the **fair distribution** 🤝 of decision-making power very important.
+I'm very **curious** and I love **challenges** 🎯. I have been practicing **meditation** 🧘‍♂️ for several years and I like **mountain biking** 🚵‍♂️. I mainly **read** essays about psychology, politics, sociology, but also novels 📖. I am very fussy about work **organization**, **productivity** and **time management** ⏱️. I'm a **minimalist** and I love the **KISS** (Keep It Simple Stupid) principle 🚀. I have been working with **Javascript** for 3 years (**TypeScript** in the last year) and **Solidity** for 2 years, but I have also used **Python** for several projects. For the past two years I have been working on **blockchain** and **p2p** technologies, mainly on **Ethereum**. I consider **privacy** 🔒 and a **fair distribution** 🤝 of decision-making power to be very important.
 
-- 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and a JS library to be used as a module of a decentralized e-voting system.
-
-- 🌱 I'm currently learning **ethers.js**, and **ZK-Snark technologies**.
+- 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and JS libraries that can be used as part of a decentralized e-voting system.
 
 - 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
 
