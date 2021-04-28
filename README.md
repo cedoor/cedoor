@@ -16,7 +16,7 @@ I'm very **curious** and I love **challenges** 🎯. I have been practicing **me
 **Blockchain & related technologies**
 
 [![Ethereum](https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg)](https://ethereum.org)
-[![Besu](https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg)](https://ethereum.org)
+[![Besu](https://www.vectorlogo.zone/logos/hyperledger/hyperledger-ar21.svg)](https://github.com/hyperledger/besu/)
 
 > [Solidity](https://github.com/ethereum/solidity) | [Ethers.js](https://github.com/ethers-io/ethers.js/) | [Web3.js](https://github.com/ChainSafe/web3.js) | [Hardhat](https://hardhat.org/) | [Truffle](https://www.trufflesuite.com/) | [OpenZeppelin](https://openzeppelin.com/) | [IPFS](https://ipfs.io/) | [Ceramic](https://ceramic.network/)
 
