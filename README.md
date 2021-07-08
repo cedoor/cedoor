@@ -7,7 +7,7 @@
 
 I'm very **curious** and I love **challenges** 🎯. I have been practicing **meditation** 🧘‍♂️ for several years and I like **mountain biking** 🚵‍♂️. I mainly **read** essays about psychology, politics, sociology, but also novels 📖. I am very fussy about work **organization**, **productivity** and **time management** ⏱️. I'm a **minimalist** and I love the **KISS** (Keep It Simple Stupid) principle. I have been working with **Javascript** for 3 years (**TypeScript** in the last year) and **Solidity** for 2 years, but I have also used **Python** for several projects. For the past two years I have been working on **blockchain** and **p2p** technologies, mainly on **Ethereum**. I consider **privacy** 🔒 and a **fair distribution** 🤝 of decision-making power to be very important.
 
-- 🔭 I'm currently working on **Elekton**, a set of Solidity contracts and JavaScript libraries that can be used as module of a decentralized end-to-end e-voting system.
+- 🔭 I'm currently working on a system based on Ethereum technologies to ensure greater transparency and traceability in the agri-food supply chain.
 
 - 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
 
