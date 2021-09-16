@@ -291,6 +291,9 @@ xmap <silent><leader>s <Plug>(coc-range-select)
 " Remap for rename current word.
 nmap <leader>r <Plug>(coc-rename)
 
+" Remap for rename current file.
+nmap <leader>rr :CocCommand workspace.renameCurrentFile<CR>
+
 " Organize imports of the current buffer.
 nmap <silent><leader>o :call CocAction('runCommand', 'editor.action.organizeImport')<CR>
 
