@@ -64,6 +64,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-sh',
   \ 'coc-css',
+  \ 'coc-rls',
   \ 'coc-html',
   \ 'coc-gitignore',
   \ 'coc-marketplace',
