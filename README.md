@@ -7,7 +7,7 @@
 
 I'm very **curious** and I love **challenges** 🎯. I have been practicing **meditation** 🧘‍♂️ for several years and I like **nature**, **mountains** in particular ⛰️. I mainly **read** essays about psychology, politics, sociology, but also novels 📖. I am very fussy about work **organization**, **productivity** and **time management** ⏱️. I'm a **minimalist** and I love the **KISS** (Keep It Simple Stupid) principle. I have been working with **JavaScript**/**TypeScript** for 5 years and **Solidity** for 3 years, but I have also used **Python** for several projects. For the past 3 years I have been working with **blockchain** and **peer-to-peer** technologies, mostly with **Ethereum**. I consider **privacy** 🔒 and a **fair distribution** 🤝 of decision-making power to be very important.
 
-- 🔭 I'm currently working on [InterRep](https://github.com/InterRep/), a system that allows services to verify users' reputation without exposing their identities.
+- 🔭 I'm currently working on [InterRep](https://github.com/InterRep/), a system that allows DApps or services to verify users' reputation without exposing their identities.
 
 - 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
 
