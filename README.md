@@ -7,7 +7,7 @@
 
 I'm very **curious** and I love **challenges** 🎯. I have been practicing **meditation** 🧘‍♂️ for several years and I like **nature**, **mountains** in particular ⛰️. I mainly **read** essays about psychology, politics, sociology, but also novels 📖. I am very fussy about work **organization**, **productivity** and **time management** ⏱️. I'm a **minimalist** and I love the **KISS** (Keep It Simple Stupid) principle. I have been working with **JavaScript**/**TypeScript** for 5 years and **Solidity** for 3 years, but I have also used **Python** for several projects. For the past 3 years I have been working with **blockchain** and **peer-to-peer** technologies, mostly with **Ethereum**. I consider **privacy** 🔒 and a **fair distribution** 🤝 of decision-making power to be very important.
 
-- 🔭 I'm currently working on [InterRep](https://github.com/InterRep/), a system which allows people to export cryptographic proofs of their reputation accrued on social networks or other sites (e.g. Twitter, Github, Reddit) and to put these proofs on a decentralized platform (i.e. Ethereum) in order to allow decentralized applications or services to verify them efficiently in a privacy-focused environment.
+- 🔭 I'm currently working on [InterRep](https://github.com/InterRep/), a system that allows services to verify users' reputation without exposing their identities.
 
 - 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
 
@@ -22,11 +22,11 @@ I'm very **curious** and I love **challenges** 🎯. I have been practicing **me
 
 **Web technologies**
 
-[![Node](https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg)](https://nodejs.org/)
+[![Node.js](https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg)](https://nodejs.org/)
 [![React](https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg)](https://reactjs.org/)
 [![Angular](https://www.vectorlogo.zone/logos/angular/angular-ar21.svg)](https://angular.io/)
 
-> [React Native](https://reactnative.dev/) | [D3.js](https://d3js.org/) | [Electron](https://www.electronjs.org/) | [Ionic](https://ionicframework.com/) | [Babel](https://babbel.com/) | [Rollup](https://www.rollupjs.org) | [ESLint](https://eslint.org/) | [Prettier](https://prettier.io/)
+> [Next.js](https://nextjs.org/) | [React Native](https://reactnative.dev/) | [D3.js](https://d3js.org/) | [Electron](https://www.electronjs.org/) | [Ionic](https://ionicframework.com/) | [Babel](https://babbel.com/) | [Rollup](https://www.rollupjs.org) | [ESLint](https://eslint.org/) | [Prettier](https://prettier.io/)
 
 **JavaScript/TypeScript testing**
 
