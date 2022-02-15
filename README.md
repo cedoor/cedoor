@@ -9,7 +9,7 @@ I'm very **curious** and I love **challenges** 🎯. I have been practicing **me
 
 - 🔭 I'm currently working on [InterRep](https://github.com/InterRep/), a system that allows DApps or services to verify users' reputation without exposing their identities.
 
-- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) book series and *The Devops Handbook: How to Create World-Class Agility, Reliability, & Security in Technology*.
+- 📚 I'm currently reading the [*YDKJS*](https://github.com/getify/You-Dont-Know-JS) (Kyle Simpson) book series and the *Sprawl trilogy* (William Gibson).
 
 ---
 
