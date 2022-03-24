@@ -118,10 +118,6 @@ let g:NERDTreeIgnore = ['^node_modules$']
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
-" Start NERDTree. If a file is specified, move the cursor to its window.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
-
 """ NERDCommenter configurations
 let g:NERDCreateDefaultMappings = 0
 
@@ -240,7 +236,7 @@ nmap <Tab> :bnext<CR>
 nmap <S-Tab> :bprevious<CR>
 
 " Toggle the Nerd tree.
-nmap <silent><C-t> :NERDTreeFocus<CR>
+nmap <silent><C-t> :NERDTreeToggle<CR>
 
 " Toggle the tag bar.
 nmap <silent><C-b> :TagbarToggle<CR>
