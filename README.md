@@ -1,11 +1,5 @@
 ![Header](https://raw.githubusercontent.com/cedoor/cedoor/main/assets/header.svg?token=ACXGAP33DLPSX7XB53JBB3S7TVGH4 "Header")
 
-[![Twitter](https://www.vectorlogo.zone/logos/twitter/twitter-ar21.svg)](https://twitter.com/cedoor_)
-[![Linkedin](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://linkedin.com/in/cedoor)
-[![Medium](https://www.vectorlogo.zone/logos/medium/medium-ar21.svg)](https://medium.com/@cedoor_)
-
----
-
 **Meditation** | **Nature** | **Books** | **Productivity** | **Minimalism** | **Open Source** | **Privacy** | **Decentralization**
 
 ---
