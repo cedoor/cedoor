@@ -25,58 +25,12 @@ config.window_padding = {
 }
 config.default_cursor_style = "BlinkingBar"
 
-local opencode_hunk_tabs = {}
-
 config.keys = {
-  { key = "d", mods = "CMD", action = wezterm.action_callback(function(_, pane)
-    local tab_id = pane:tab():tab_id()
-
-    local tool_panes = opencode_hunk_tabs[tab_id]
-
-    if tool_panes then
-      opencode_hunk_tabs[tab_id] = nil
-      local cwd = tool_panes.opencode:get_current_working_dir()
-      local shell_pane = tool_panes.opencode:split {
-        direction = "Right",
-        cwd = cwd and cwd.file_path or nil,
-      }
-
-      wezterm.run_child_process {
-        wezterm.executable_dir .. "/wezterm",
-        "cli",
-        "kill-pane",
-        "--pane-id",
-        tostring(tool_panes.hunk_id),
-      }
-      wezterm.run_child_process {
-        wezterm.executable_dir .. "/wezterm",
-        "cli",
-        "kill-pane",
-        "--pane-id",
-        tostring(tool_panes.opencode_id),
-      }
-      shell_pane:activate()
-      return
-    end
-
-    local cwd = pane:get_current_working_dir()
-
-    local hunk_pane = pane:split {
-      direction = "Right",
-      cwd = cwd and cwd.file_path or nil,
-      args = { "zsh", "-ic", "exec hunk diff" },
-    }
-
-    pane:send_text("opencode\n")
-    pane:activate()
-    opencode_hunk_tabs[tab_id] = {
-      opencode = pane,
-      opencode_id = pane:pane_id(),
-      hunk_id = hunk_pane:pane_id(),
-    }
-  end)},
+  { key = "d", mods = "CMD", action = wezterm.action.SplitVertical },
   { key = "LeftArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Left") },
   { key = "RightArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Right") },
+  { key = "UpArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Up") },
+  { key = "DownArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Down") },
 }
 
 return config
