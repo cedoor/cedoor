@@ -26,7 +26,7 @@ config.window_padding = {
 config.default_cursor_style = "BlinkingBar"
 
 config.keys = {
-  { key = "d", mods = "CMD", action = wezterm.action.SplitVertical },
+  { key = "d", mods = "CMD", action = wezterm.action.SplitHorizontal },
   { key = "LeftArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Left") },
   { key = "RightArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Right") },
   { key = "UpArrow", mods = "CMD|SHIFT", action = wezterm.action.ActivatePaneDirection("Up") },
