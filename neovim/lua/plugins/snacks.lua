@@ -10,6 +10,7 @@ return {
           },
           explorer = {
             hidden = true,
+            auto_close = true,
           },
         },
       },
